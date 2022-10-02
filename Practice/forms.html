@@ -9,13 +9,35 @@
 <body>
     <h1>Forms Demo</h1>
     
+    <button> Doesn't do anything </button> <!-- because it is outside of the form element -->
+    
     <form action="/tacos">
-        <input type="text" placeholder="username"> <!-- placeholder attribute indicates the user what to type --> 
-        <input type="password" placeholder="password" name="" id="">
-        <input type="color"> <!-- gives you a color picker (pretty cool)-->
-        <input type="number" placeholder="enter a number">
-        <input type="time">
+        
+        <p>
+            <label for="username">Enter a username:</label> <!-- When I click on the text, it will make me type on the username box-->
+            <input type="text" placeholder="username" id="username" name="username"> <!-- placeholder attribute indicates the user what to type --> 
+        </p>
+        
+        <button type="button">Doens't do anything </button> <!-- because type was set to button-->
+        <p>
+            <label for="password">Enter a password</label>
+            <input type="password" placeholder="password" name="password" id="password">
+        </p>
+        
+        <p>
+            <label for="color">Enter a color</label>
+            <input type="color" id="color" name="color"> <!-- gives you a color picker (pretty cool)-->
+        </p>
+        
+        <p>
+            <label for="number">Enter a number</label>
+            <input type="number" placeholder="enter a number" id="number" name="number">
+        </p>
+        
+        <button>Submit</button> 
+        <!-- when we submit a form, it sends a HTTP request to wherever the action attribute of form was set to -->
     </form>
+
     
 </body>
 </html>
