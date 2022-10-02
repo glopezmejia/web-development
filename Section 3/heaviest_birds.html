@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaviest Birds Table</title>
+</head>
+<body>
+    <h1>Heaviest Birds</h1>
+    <table>
+        <thead>
+            <tr> <!--this is a row of headings-->
+                <th>Animal</th> <!--this is a heading-->
+                <th>Average Mass[kg/(lb)]</th>
+                <th>Maximum Mass[kg/(lb)]</th>
+                <th>Flighted</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> <!--this is a row-->
+                <td>Ostrich</td> <!--this is just a cell-->
+                <td>104(230)</td>
+                <td>156.8(346)</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90(200)</td>
+                <td>130(287)</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5(29.8)</td>
+                <td>39(86)</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Version 2</h2>
+    <table>
+        <thead>
+            <tr> <!--this is a row of headings-->
+                <th rowspan="2">Animal</th> <!--this is a heading that takes up two rows -->
+                <th colspan="2">Average Mass</th> <!-- uses colspan to envelope two columns-->
+                <th rowspan="2">Flighted</th>
+            </tr>
+
+            <!-- this is a subheader -->
+            <tr>
+                <th>kg</th>
+                <th>lb</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> <!--this is a row-->
+                <td>Ostrich</td> <!--this is just a cell-->
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <table>
+        <thead> 
+            <tr>
+                <th>brand</th>
+                <th>make</th>
+                <th>year</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>honda</td>
+                <td>fit</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>ford</td>
+                <td>focus</td>
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>volkwaggen</td>
+                <td>golf</td>
+                <td>2002</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+</body>
+</html>
