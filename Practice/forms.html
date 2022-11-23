@@ -65,6 +65,43 @@
         <input type="checkbox" name="agree" id="agree">
         <label for="agree">I agree to the terms and conditions</label> 
         <!-- this for in label is linked to the id of the input -->
+        <!-- use the 'checked' attribute with no parameters to check the box from the start -->
+
+        <input type="checkbox" id="checked" name="lol" checked>
+        <label for="checked">This box was checked with HTML</label>
+        <button>Submit Checkboxes</button>
+    </form>
+
+    <h2>Radio Boxes</h2>
+    <form action="#">
+        <p>
+            <!-- we associate the radios by giving them the same name -->
+            <label for="xs">XS</label>
+            <input type="radio" name="shirt_size" id="xs" value="xs">
+            
+            <label for="s">S</label>
+            <input type="radio" name="shirt_size" id="s" value="s">
+            
+            <label for="m">M</label>
+            <input type="radio" name="shirt_size" id="m" value="m">
+            <button>Submit T-Shirt Sizes</button>
+        </p>
+    </form>
+
+    <h2>Selects</h2>
+    <form action="#">
+        <p>
+            <!-- the select is the parent of the option tag and they are always paired -->
+            <label for="meal">Please select wedding Entree</label>
+            <select name="meal" id="meal">
+                <option value="">Please choose an option</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+
+        <button>Submit Meal</button>
     </form>
 </body>
 </html>
