@@ -8,6 +8,8 @@
 </head>
 <body>
     <h1>Forms Demo</h1>
+
+    <p style="font-weight: 900; font-size: x-large;">Here are the some of the most used input types in forms: </p>
     
     <button> Doesn't do anything </button> <!-- because it is outside of the form element -->
     
@@ -31,7 +33,7 @@
         
         <p>
             <label for="number">Enter a number</label>
-            <input type="number" placeholder="enter a number" id="number" name="number">
+            <input type="number" placeholder="enter a number" id="number" name="number" min="1" max="1000" step="1">
         </p>
         
         <button>Submit</button> 
@@ -101,7 +103,37 @@
             </select>
         </p>
 
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <!-- step tells you how much to increase or decrease by -->
+            <!-- value tells you where to start when the page is loaded -->
+            <input type="range" id="cheese" min="1" max="100" step="10" value="70" name="cheese-level">
+        </p>
+
+        <p>
+            <label for="requests">Any special requests?</label><br>
+            <textarea name="requests" id="requests" cols="40" rows="10" placeholder="type something here"></textarea>
+        </p>
+
         <button>Submit Meal</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="">
+        <!-- 1. required validation -->
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>  
+
+        <!-- 2. minlength and maxlength validation -->
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+        </p>
+
+        <!-- 3. pattern validation -->
+        <!-- they help by indicating the how to format the input -->
+        <!-- e.g. email and url inputs -->
+        <button>Submit</button>
     </form>
 </body>
 </html>
